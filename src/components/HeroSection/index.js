@@ -15,7 +15,16 @@ const HeroSection = () => {
   return (
     <HeroContainer id="home">
       <HeroBg>
-        <VideoBg playsInline autoPlay loop muted src={Video} type="video/mp4" />
+        <VideoBg
+          playsInline
+          autoPlay
+          loop
+          muted
+          poster={require("../../images/pos.png").default}
+          type="video/mp4"
+        >
+          <source src={Video} type="video/mp4" />
+        </VideoBg>
         {/* <VideoBg playsInline autoPlay loop muted src="" type="video/mp4" /> */}
       </HeroBg>
       <HeroContent>
